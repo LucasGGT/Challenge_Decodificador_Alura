@@ -1,0 +1,96 @@
+* {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #f3f5fc;
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.item1 {
+    padding: 20px;
+    grid-area: texto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#texto {
+    border: 0;
+    align-self: baseline;
+    outline: none;
+    text-transform: lowercase;
+    font-size: 20px;
+    background-color: #f3f5fc;
+}
+
+::placeholder { color: #031652; }
+
+
+#criptografar {
+    border: 0;
+    border-radius: 23px;
+    padding: 10px 20px 10px;
+    background: rgb(81, 7, 118);
+    color: white;
+}
+
+#descriptografar {
+    border: 0;
+    border-radius: 23px;
+    padding: 10px 20px 10px;
+    background: mediumaquamarine;
+    color: white;
+}
+
+.item2 {
+    left: 43px;
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    grid-area: resposta;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 20px 0px #aaa;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resposta {
+    border: 0;
+    overflow-wrap: anywhere;
+    color: #777;
+    align-self: baseline;
+    outline: none;
+    background-color: white;
+    font-size: 20px;
+}
+
+#copiar {
+    border: 0;
+    border-radius: 23px;
+    padding: 10px 20px 10px;
+    background: #0089ff;
+    color: white;
+}
+
+#decodificador {
+    display: grid;
+    grid-template-areas: 'texto texto resposta';
+    position: relative;
+    height: 77vh;
+}
+
+img {
+    position: absolute;
+    top: 200px;
+    left: 127px;
+}

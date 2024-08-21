@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <title>Decodificador - Challenge</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <h1>Decodificador</h1>
+        <div id="decodificador">
+            <div class="item1">
+                <textarea id="texto" class="texto" placeholder="Digite aqui..." rows="4" cols="70"></textarea>
+
+                <div id="botoes">
+                    <p>Apenas letras minúsculas e sem acento.</p>
+                    <button id="criptografar" onclick="btnEncriptar()">Criptografar</button>
+                    <button id="descriptografar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </div>
+
+            <div class="item2">
+                <textarea id="resposta" class="resposta" rows="7" cols="32" disabled></textarea>
+                <div class="img-msg">
+                    <img src="./High quality products 1 1.svg" height="150" width="125">
+                    <p>Nenhum texto criptografado/descriptografado.</p>
+                </div>
+                <button id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>Feito por Lucas Telles (Challenge Alura)</p>
+            <p>18/08/2024</p>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
